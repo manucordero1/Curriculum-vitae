@@ -1,0 +1,40 @@
+body{
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	background-color: navy;
+}
+
+img{
+	width: 85%;
+	display: inline-block;
+}
+
+
+header{
+	text-align: center;
+	width: 70%;
+	display: block;
+		font-size: 45px;
+}
+
+p{
+	display: block;
+	width: 85%;
+	color: white;
+	font-size:75px;
+}
+
+header p {
+	color: darkgreen;
+}
+
+h1{
+	font-size:120px;
+	display: block;
+	color: green;
+}
+
+h2{
+	color: red;
+}

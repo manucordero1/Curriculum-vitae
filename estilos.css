@@ -1,0 +1,616 @@
+@font-face {
+    font-family: Maragsa ;
+   src: url(fonts/RestoraBold.otf);
+
+}
+
+@font-face {
+    font-family: Margi ;
+   src: url(fonts/Retrotype.ttf);
+
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+   background-color:#Ffffff;
+}
+
+.grid_container{
+
+    padding-bottom: 200px;
+}
+.h1{
+   grid-area: h1;
+ 
+}
+.Header{
+   grid-area: header;
+
+
+}
+
+.grid{
+   display: grid;
+   grid-auto-columns: 0.7fr 1.1fr 1.1fr;
+   grid-auto-rows: 1fr 0.1fr;
+   grid-auto-flow: row;
+ grid-template-areas:
+ "Imagen educacion proyectos"
+  "footer footer footer";
+  grid-column-gap: 10px;
+
+   ;
+ }
+
+.cuerpo{
+   grid-area: cuerpo;
+}
+
+.grid h1{
+   font-size: 43px;
+   font-family: "Maragsa" ;
+   color: #050505;
+}
+
+.grid h2{
+   font-size: 25px;
+   color: #050505;
+   margin-top: 5px;
+}
+
+.grid ul{
+   font-size: 20px;
+   color: #050505;
+   margin-top: 25px;
+   margin-left: 23px;
+
+  }
+
+
+.grid p{
+   font-size: 17px;
+   margin-top: 25px;
+   width: 94%;
+    color: #050505;
+}
+
+
+.h1 h1{
+   font-size: 148px;
+   font-family: "Margi" ;
+color: #fd3924;
+margin-top: 5px;
+
+
+
+}
+
+header h2{
+   font-size: 35px;
+   font-family: Helvetica Light;
+   color:  #333733;
+   margin-top: 15px;
+
+}
+
+
+
+
+.idiomas{
+   grid-area: idiomas;
+}
+
+.info{
+   grid-area: info;
+}
+.Habilidades{
+   grid-area: habilidades;
+}
+
+.Imagen {
+   grid-area: Imagen;
+   width: 100%;
+   padding-top: 15px;
+   display: block;
+ background: rgb(252,176,69);
+background: linear-gradient(0deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 100%);
+padding: 5px;
+text-align: center;
+}
+
+.Imagen div{
+   display: block;
+}
+.Imagen img {
+   width: 100%;
+     opacity: 1;
+    border: 2px #CE9C9D ;
+    padding-top: 10px;
+    transition: all 0.7s  ease;
+}
+
+.Imagen img:hover {
+  transform: translate(80px);
+}
+
+section{
+   margin-bottom: 150px;
+}
+
+.Imagen h1{
+  color: #E0E0E0;
+  font-size: 65px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.Imagen h1{
+
+transition: all 0.7s  ease;
+}
+
+.Imagen h1:hover{
+transform: scale(1.25,1);
+}
+
+.Imagen p{
+   color: #050505;
+   text-align: left;
+   font-size: 20px;
+   margin-top: 5px;
+}
+
+
+.educacion{
+   grid-area: educacion;
+   font-family: helvetica;
+   font-size: 15px;
+   color: black;
+   padding-left: 30px;
+    padding-right: 10px;
+
+}
+
+.educacion h1{
+   font-size: 70px;
+   font-family: "Maragsa" ;
+   color: #050505;
+   margin-top: 10px;
+   transition: all 0.7s ease;
+}
+
+.educacion h1:hover{
+color: #a93185;
+}
+
+.educacion h2{
+    font-size: 24px;
+    color: #b82d72;
+    margin-top: 25px;
+    width: 100%;
+}
+.idiom h1{
+   margin-top: 15px;
+}
+.educacion ul{
+   font-size: 18px;
+   color: #b82d72;
+   margin-top: 7px;
+   margin-bottom: 30px;
+
+  }
+
+
+.educacion p{
+ font-size: 17px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+
+
+.idiom h1{
+   margin-top: 15px;
+}
+
+
+
+.Habilidades{
+   grid-area: habilidades;
+}
+.Habilidades ul{
+    color: #b82d72;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.Habilidades li{
+   margin-top: 10px;
+   color:#b82d72 ;
+   margin-bottom: 20px;
+}
+
+.Proyectos{
+   grid-area: proyectos;
+   width: 100%;
+  padding-left: 15px;
+
+
+
+
+
+}
+.Proyectos h1{
+   font-size: 70px;
+   font-family: "Maragsa" ;
+   color: #050505;
+   margin-top: 10PX;
+   transition: all 0.7s ease;
+}
+
+.Proyectos h1:hover{
+ transform: scale(1.25,1);
+ color: #a93185;  
+}
+
+.Proyectos div{
+   width: 90%;
+   text-align: center;
+   color: #ffffff;
+   font-size: 12px;
+   justify-content: center;
+   border-radius: 25px;
+      border-top:1px ;
+   border-top-color: black;
+
+}
+
+
+
+.Proyectos img{
+   width: 100%;
+   display: flex;
+   border-radius: 15px;
+
+
+}
+
+.fotos{
+   display: grid;
+   grid-auto-columns: 1fr 1fr;
+   grid-auto-rows: 1fr 1fr;
+      grid-auto-flow: row;
+ grid-template-areas:
+    "disenop produccion"
+    "aud redes";
+    grid-gap: 10px;
+    margin-top: 19px;
+    grid-row-gap: 30px;
+}
+
+.fotos h2{
+margin-top: 0;
+padding: 20px;
+}
+
+.disenop{
+   grid-area: disenop;
+   border-radius:30px;
+ background: rgb(252,176,69);
+background: linear-gradient(0deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 100%);
+
+}
+
+
+.disenop{
+   transition: all 0.5s ease;
+}
+.disenop:hover{
+   box-shadow: inset 0 0 50px #961ee7;
+}
+
+
+
+
+.produccion{
+   transition: all 0.5s ease;
+}
+.produccion:hover{
+   box-shadow: inset 0 0 50px #961ee7;
+}
+
+.produccion{
+   grid-area: produccion;
+   border-radius: 30px;
+    background: rgb(252,176,69);
+background: linear-gradient(0deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 100%);
+}
+.aud{
+   grid-area: aud;
+   border-radius: 30px;
+    background: rgb(252,176,69);
+background: linear-gradient(0deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 100%);
+}
+
+
+.aud{
+   transition: all 0.5s ease;
+}
+.aud:hover{
+   box-shadow: inset 0 0 50px #961ee7;
+}
+
+
+.redes{
+   grid-area: redes;
+    background: rgb(252,176,69);
+background: linear-gradient(0deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 100%);
+border-radius: 30px;
+}
+
+
+
+.redes{
+   transition: all 0.5s ease;
+}
+.redes:hover{
+   box-shadow: inset 0 0 50px #961ee7;
+}
+
+
+
+
+.Informacion{
+   grid-area: informacion;
+   margin-top: 70px;
+   margin-bottom: 60px;
+
+ 
+
+}
+
+.Informacion p{
+    color: #D6D6D6;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a{
+   text-decoration: none;
+
+}
+
+
+
+
+
+
+footer{
+
+background-color: #fcb045;
+text-align: center;
+color:#050505;
+padding: 10px;
+grid-area: footer;
+}
+
+footer img{width: 10%;
+   justify-content: center;
+   text-align: center;
+   padding-top: 5px;
+
+}
+
+footer h2{
+   margin-top: 5px;
+}
+
+footer a{
+   text-decoration: none;
+   color: black;
+   transition: all 0.5s ease;
+}
+
+footer a:hover{
+color: #ffffff;
+}
+
+@media (min-width: 991px) and (max-width: 1399px){ 
+.Proyectos div{
+   width: 95%;
+}
+
+.Proyectos{
+   padding-left: 10px;
+}
+
+
+.educacion{
+   padding-left: 15px;
+   width: 95%;
+}
+.educacion h1{
+   font-size: 60px;
+}
+
+.Proyectos h1{
+   font-size: 60px;
+}
+.fotos h2{
+   padding: 10px;
+}
+
+}
+
+@media(min-width: 769px) and (max-width: 990px){
+   
+.grid{
+   display: grid;
+   grid-auto-columns: 1fr;
+   grid-auto-rows: 0.5fr 0.3fr 1fr 0.3fr;
+   grid-auto-flow: row;
+ grid-template-areas:
+ "Imagen"
+  "educacion" 
+  "proyectos"
+  "footer";
+   ;
+ }
+
+.Imagen h1{
+   font-size: 90px;
+   margin-top: 15px;
+}
+
+.Informacion {
+   margin-top: 30px;
+}
+.Informacion p{
+   font-size: 20px;
+}
+
+.educacion{
+   text-align: center;
+}
+
+.educacion h2{
+   font-size: 27px;}
+
+.educacion p{
+   width: 98%;
+   margin-right: 0;
+   padding-right: 0;
+}
+
+.educacion ul{
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   font-size: 19px;
+}
+
+.Proyectos{
+   text-align: center;
+   width: 96%;
+   margin: auto;
+}
+
+.Proyectos div{
+   width: 100%;
+   justify-content: center;
+   margin: auto;
+}
+
+
+
+.Imagen img:hover {
+  transform: translate(20px);
+}
+
+
+
+
+
+
+
+
+
+   .Imagen img{
+      width: 50%;
+   }
+
+}
+}
+
+@media(min-width: 500px) and (max-width: 768px){
+.grid{
+   display: grid;
+   grid-auto-columns: 1fr;
+   grid-auto-rows: 0.5fr 0.3fr 1fr 0.3fr;
+   grid-auto-flow: row;
+ grid-template-areas:
+ "Imagen"
+  "educacion" 
+  "proyectos"
+  "footer";
+   ;
+ }
+
+.Imagen h1{
+   font-size: 115px;
+}
+
+.Informacion p{
+   font-size: 30px;
+}
+
+.educacion{
+   text-align: center;
+}
+
+.educacion h2{
+   font-size: 27px;}
+
+.educacion p{
+   width: 98%;
+   margin-right: 0;
+   padding-right: 0;
+}
+
+.educacion ul{
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   font-size: 19px;
+}
+
+.Proyectos{
+   text-align: center;
+}
+
+.Proyectos div{
+   width: 98%;
+   justify-content: center;
+   margin: auto;
+}
+
+.fotos{
+   display: grid;
+   grid-auto-columns: 1fr ;
+   grid-auto-rows: 1fr 1fr 1fr 1fr;
+      grid-auto-flow: row;
+ grid-template-areas:
+    "disenop" 
+    "produccion"
+    "aud" 
+    "redes";
+    grid-gap: 10px;
+    margin-top: 19px;
+    grid-row-gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.Imagen img:hover {
+  transform: translate(20px);
+}
+
+}
+
+
+
+
+
+
+
+
+
